@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canvas &amp; Input Example</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        canvas {
+            border: 2px dotted gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text Art Using Canvas</h1>
+
+        <!-- Canvas element -->
+        <div style="width: 100%;display: flex;align-items: center;justify-content: center;margin: 3% 0;">
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+        <!-- Text input field -->
+        <div class="form-group">
+            <input type="text" class="form-control" id="textInput" placeholder="Enter text" value="Hello, world!">
+        </div>
+
+        <!-- Select dropdown for text effects -->
+        <div class="form-group">
+            <label for="selectInput">Choose a text art:</label>
+            <select class="form-control" id="selectInput">
+                <option value="normal">normal</option>
+                <option value="curve">curve</option>
+                <option value="arch">arch</option>
+                <option value="bridge">bridge</option>
+                <option value="valley">valley</option>
+                <option value="pinch">pinch</option>
+                <option value="bulge">bulge</option>
+                <option value="perspective">perspective</option>
+                <option value="pointed">pointed</option>
+                <option value="downward">downward</option>
+                <option value="upward">upward</option>
+                <option value="cone">cone</option>
+            </select>
+        </div>
+
+        <!-- Button to draw canvas -->
+        <button type="button" class="btn btn-primary" id="draw">Draw Text with Art</button>
+    </div>
+
+    <!-- JavaScript code to handle canvas drawing and button click event -->
+    <script src="script.js"></script>
+</body>
+
+</html>
